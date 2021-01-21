@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="ALM1 <= 0.6\ngini = 0.7\nsamples = 146\nvalue = [101, 61, 2, 1, 16, 15, 3, 36]"] ;
+1 [label="ALM1 <= 0.4\ngini = 0.5\nsamples = 91\nvalue = [101, 0, 2, 0, 1, 15, 1, 36]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="AAC <= 0.5\ngini = 0.2\nsamples = 54\nvalue = [81, 0, 0, 0, 0, 0, 0, 8]"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 26\nvalue = [49, 0, 0, 0, 0, 0, 0, 0]"] ;
+2 -> 3 ;
+4 [label="gini = 0.3\nsamples = 28\nvalue = [32, 0, 0, 0, 0, 0, 0, 8]"] ;
+2 -> 4 ;
+5 [label="MCG <= 0.5\ngini = 0.7\nsamples = 37\nvalue = [20, 0, 2, 0, 1, 15, 1, 28]"] ;
+1 -> 5 ;
+6 [label="gini = 0.0\nsamples = 10\nvalue = [20, 0, 0, 0, 0, 0, 0, 0]"] ;
+5 -> 6 ;
+7 [label="gini = 0.5\nsamples = 27\nvalue = [0, 0, 2, 0, 1, 15, 1, 28]"] ;
+5 -> 7 ;
+8 [label="LIP <= 0.7\ngini = 0.4\nsamples = 55\nvalue = [0, 61, 0, 1, 15, 0, 2, 0]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="GVH <= 0.7\ngini = 0.3\nsamples = 52\nvalue = [0, 61, 0, 1, 14, 0, 0, 0]"] ;
+8 -> 9 ;
+10 [label="gini = 0.3\nsamples = 51\nvalue = [0, 61, 0, 1, 13, 0, 0, 0]"] ;
+9 -> 10 ;
+11 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1, 0, 0, 0]"] ;
+9 -> 11 ;
+12 [label="ALM1 <= 0.6\ngini = 0.4\nsamples = 3\nvalue = [0, 0, 0, 0, 1, 0, 2, 0]"] ;
+8 -> 12 ;
+13 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 0, 0, 2, 0]"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 1\nvalue = [0, 0, 0, 0, 1, 0, 0, 0]"] ;
+12 -> 14 ;
+}
